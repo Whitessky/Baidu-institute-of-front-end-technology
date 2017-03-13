@@ -1,0 +1,485 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>报纸</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style>
+ body{
+      background-color:#333;
+ }
+ #parent{
+	     position:relative;
+	     height:1386px;
+		 width:892px;
+		 margin:0 auto;
+		 background-color:#FFF;
+		 padding:0 44px;
+ }
+ #topdiv{
+	     position:relative;
+	     width:110px;
+		 height:61px;
+		 background-color:#d45d5c;
+ }
+ #ife{
+	 position:absolute;
+	 bottom:0;
+	 font-size:12px;
+	 font-family:SimHei;
+	 color:#ffffff;
+ }
+ #date,#com{
+	 position:absolute;
+	 right:44px;
+	 top:44px;
+	 font-family:SimHei;
+	 color:#d45d5c;
+	 font-size:12px;
+ }
+ #com{
+	  top:1325px;
+ }
+ #line1{
+	 width:100%;
+	 height:2px;
+	 background-color:#938e8c;
+ }
+ #picture{
+	 position:absolute;
+	 margin-top:35px;
+	 width:641px;
+	 height:350px;
+ }
+ #left{
+	 width:191px;
+	 height:100%;
+	 position:absolute;
+	 top:0;
+	 left:0;
+	 background-color:#75b86b;
+	 opacity:0.4;
+ }
+ #right{
+	 width:191px;
+	 height:100%;
+	 position:absolute;
+	 right:0;
+	 top:0;
+	 background-color:#cc8091;
+	 opacity:0.4;
+ }
+ #p1{
+	 position:absolute;
+	 right:44px;
+	 top:96px;
+	 height:350px;
+	 width:203px;
+ }
+ #line2{
+	  width:100%;
+	  height:2px;
+	  background-color:#cc8091;
+	  margin-bottom:10px;
+ }
+ #p2{
+	 margin:0;
+     font-family:"Microsoft YaHei UI";
+	 font-size:18px;
+	 border-bottom:2px solid #676767;
+	 width:66px;
+ }
+ .p3{
+	 font-family:"Microsoft YaHei UI";
+	 font-size:24px;
+ }
+ #p4{
+	 margin-top:0;
+	 margin-bottom:10px;
+	 font-size:12px;
+	 color:#676767;
+	 font-family:"KaiTi";
+	 font-style:oblique;
+ }
+ #p5{
+	 position:absolute;
+	 right:25px;
+	 margin-top:0;
+	 font-size:116px;
+	 color:#75b86b;
+	 font-family:"Microsoft YaHei UI";
+	 font-style:italic;
+	 
+ }
+ #p6{
+	 position:absolute;
+	 bottom:0;
+	 font-size:55px;
+	 color:#cc8091;
+	 font-family:"Microsoft YaHei UI";
+ }
+ #p7{
+	 position:absolute;
+	 bottom:20px;
+	 left:80px;
+	 font-size:21px;
+	 color:#cc8091;
+	 font-family:"Microsoft YaHei UI";
+ }
+ #p8{
+	 position:absolute;
+	 bottom:10px;
+	 left:80px;
+	 font-size:12px;
+	 color:#999;
+	 font-family:"Microsoft YaHei UI";
+ }
+ #what{
+	 position:absolute;
+	 top:480px;
+	 left:44px;
+	 width:220px;
+	 
+ }
+ #what1{
+	 font-family:"Microsoft YaHei UI";
+	 font-size:16px;
+	 color:#418c59;
+	 font-weight:bold;
+ }
+ #whatp1{
+	    margin-top:10px;
+	    font-size:12px;
+		line-height:16px;
+		color:#767777;
+		font-family:"SimSun";
+ }
+ #when{
+	 position:absolute;
+	 top:480px;
+	 left:290px;
+	 width:220px;
+	 
+ }
+ #when1{
+	 	font-family:"Microsoft YaHei UI";
+	 	font-size:16px;
+	 	color:#d2994f;
+	 	font-weight:bold;
+ }
+ #whenp1{
+	    margin-top:10px;
+	    font-size:12px;
+		line-height:16px;
+		color:#231815;
+		font-family:"Microsoft YaHei UI";
+		opacity:0.7;
+ }
+ #how{
+	  position:absolute;
+	  top:480px;
+	  left:530px;
+	  width:160px;
+ }
+ #how1{
+	   font-family:"Microsoft YaHei UI";
+	   font-size:16px;
+	   color:#cc7680;
+	   font-weight:bold;
+ }
+ #howp1{
+	    margin-top:10px;
+	    font-size:12px;
+		line-height:16px;
+		color:#231815;
+		font-family:"Microsoft YaHei UI";
+		opacity:0.7;
+ }
+ .last{
+	  color:#cd4a48;
+	  font-style:oblique;
+ }
+ #leftbottom{
+	        position:absolute;
+	        left:44px;
+			bottom:80px;
+ }
+ #leftbottom1{
+	          line-height:50px;
+	          font-size:42px;
+			  color:#11456b;
+			  font-family:"SimHei";
+			  font-weight:bold;
+			  margin-bottom:10px;
+ }
+ #p1sp{
+	   font-size:72px;
+	   color:#f5e327;
+	   font-style:oblique;
+ }
+ #p1sp1{
+	    font-size:33px;
+}
+ #line3{
+	    width:415px;
+		height:2px;
+		background-color:#11456b;
+		margin-bottom:10px;
+ }
+ #qian{
+	   position:relative;
+	   bottom:10px;
+	   margin-right:10px;
+	   margin-bottom:0;
+	   float:left;
+	   font-family:"Microsoft YaHei UI";
+	   font-size:70px;
+	   color:#f5e327;
+ }
+ #p9{
+	 margin:0;
+	 width:415px;
+	 font-size:12px;
+	 font-family:"SimSun";
+	 line-height:16px;
+	 color:#767777;
+ }
+ #rightbottom{
+	 position:absolute;
+	 bottom:80px;
+	 right:44px;
+	 height:613px;
+ }
+ #picture1{
+	 position:absolute;
+	 right:0;
+	 top:0;
+	 width:458px;
+	 height:275px;
+ }
+ #picbottom{
+	 position:absolute;
+	 bottom:0;
+	 width:458px;
+	 height:61px;
+	 background-color:rgba(0,0,0,0.3);
+	 
+ }
+ #line4{
+	    position:absolute;
+		left:40px;
+		top:7.5px;
+		width:3px;
+		height:44px;
+		background-color:#72b16a;
+		
+ }
+ #font1{
+	    position:absolute;
+		left:50px;
+		line-height:61px;
+		font-family:"Microsoft YaHei UI";
+		color:#ffffff;
+		font-size:26px; 
+ }
+ #font2{
+	    position:absolute;
+		left:164px;
+		bottom:15px;
+	    font-size:12px;
+		color:#72b16a;
+		font-family:"Microsoft YaHei UI";
+		font-style:italic;
+	
+ }
+ #picture2{
+	      position:absolute;
+	      margin-top:20px;
+		  right:0;
+		  bottom:0;
+	      width:459px;
+		  height:318px;
+		  background-color:#F0F0F0;
+ }
+ #trangle1,#trangle2,#trangle3{
+	     position:absolute;
+		 top:40px;
+		 left:35px;
+	     width: 0;
+         height: 0;
+         border-bottom: 10px solid #00a000;
+         border-left: 5px solid transparent;
+         border-right: 5px solid transparent;
+}
+ #trangle2{
+	       top:70px;
+ }
+ #trangle3{
+	       top:100px;
+ }
+ #wordline1,#wordline2,#wordline3{
+	                             position:absolute;
+	                             font-family:"Microsoft YaHei UI";
+								 font-size:16px;
+								 color:#5a5b5b;
+								 left:52px;
+								 top:17px;
+ }                                
+ #wordline2{
+	        top:47px;
+ }
+ #wordline3{
+	        top:77px;
+ }
+ .afterline{
+	        font-family:"Microsoft YaHei UI";
+			font-size:12px;
+			font-style:italic;
+ }
+ #div1{
+	   position:absolute;
+	   bottom:0;
+	   left:0;
+	   width:260px;
+	   height:160px;
+	   background-color:#d45d5c;
+ }
+ #word1{
+	    position:absolute;
+		left:10px;
+		top:10px;
+	    font-size:110px;
+		color:#ffffff;
+		font-family:"Microsoft YaHei UI";
+ }
+ #line5{
+	    position:absolute;
+		left:80px;
+		top:39px;
+	    width:2px;
+		height:86px;
+		background-color:#ffffff;
+ }
+ #word2{
+	    position:absolute;
+		left:90px;
+		top:25px;
+		line-height:24px;
+		font-family:"SimHei";
+		font-size:21px;
+		font-style:italic;
+		color:#ffffff;
+ }
+ #word3{
+	    position:absolute;
+		left:95px;
+		bottom:30px;
+		line-height:10px;
+		font-family:"SimHei";
+		font-size:12px;
+	    color:#ffffff;
+ }
+ #word4{
+	    position:absolute;
+		right:20px;
+		bottom:40px;
+		line-height:16px;
+		font-family:"SimHei";
+		font-size:14px;
+	    color:#5a5b5b;
+		font-style:italic;
+		text-indent:3em;
+ }
+ #word5-1,#word5-2{
+	    height:40px;
+		width:40px;	   
+	    position:absolute;
+		right:180px;
+		bottom:125px;
+	    font-size:72px;
+	    color:#d45d5c;
+		font-family:"SimHei";
+ }
+ #word5-2{
+	     right:	12px;
+		 bottom:36px;
+ }
+ #line6{
+	    position:absolute;
+		bottom:60px;
+		right:44px;
+	    width:892px;
+		height:1px;
+		background-color:#938e8c;
+ }
+</style>
+</head>
+<body> 
+ <div id="parent">
+  <div id="topdiv">
+   <div id="ife">ife.baidu.com</div>
+  </div>
+  <div id="date">2016.03</div>
+  <div id="line1"></div>
+  <div id="picture">
+  <img src="http://img0.zealer.com/8b/37/96/5dce284b72a79e6de586e2ccc4.jpg?imageView2/2/w/746/h/0" style="width:641px;    height:350px;"/>
+    <div id="left"></div>
+    <div id="right"></div>
+   </div>
+   <div id="p1">
+    <div id="line2"></div>
+    <p id="p2"><span class="p3">A</span>BOUT</p>
+    <p id="p2" style="width:127px;"><span class="p3">T</span>ECHNOLOGE</p>
+    <p id="p4">About technologe about technologe<br/>about technologe</p>
+    <p id="p5">700</p>
+    <span id="p6">3.2</span>
+    <span id="p7">css</span>
+    <span id="p8">csssscscsccscscscscsc</span>
+   </div>
+   <div id="what">
+     <span id="what1"><u>What</u></span>
+     <p id="whatp1">前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前前端前端前端前端端前端前端前端前端前端前端前</p>
+   </div>
+   <div id="when">
+     <span id="when1"><u>When</u></span>
+     <p id="whenp1">前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前前端前端前端前端端前端前端前端前端前端前端前</p>
+   </div>
+   <div id="how">
+     <span id="how1"><u>How</u></span>
+     <p id="howp1">前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前前端前端<br/></br>What--------<span class="last">40%</span><br/>What--------<span class="last">40%</span><br/>What--------<span class="last">40%</span><br/></p>
+   </div>
+   <div id="leftbottom">
+    <p id="leftbottom1"><span id="p1sp">THE </span>TECHNOLOGE<br/>OF FRONT<br/><span id="p1sp1">前端技术领域</span></p>
+    <div id="line3"></div>
+    <span id="qian">前</span><p id="p9">端前端端前端前端端端前端端端前端端端前端端端前端端端前端端端前端端端前端端端前端端端前端前端前端前端前端前端端前端前端前端前端前端端<img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2124966854,3489902665&fm=23&gp=0.jpg" style="float:right;margin:10px;" />端前端前端前端前端前端前端前端前端前端前端端端前端前端前端前端前端端端前端前端前端前端前端端端前端前端前端前端前端端端前端前端前 端前端前端前端前端前端前端端前端前端端前端前端前端前端前端端端前端前端前端前端前端端端前端前端前端前端前端</p><p id="p9" style="text-indent:2em">端端前端前端前端前端前端端端前端前端前端前端前端端端前端前端前端前端前端端端前端前端前端前端前端端端前端前端前端前端前端前端前端前端前端前端前端前端端端前端端前端前端前端前端前端端端前端前端前端前端前端端端前端前端前端前端前端端端前端前端前端前端前端前端前端前端前端前端前端前端端端前端前端前端前端前端端端前端前端前端前端前端端端前端前端前端前端前端端端前端前端前端前端前端端端前端前端前端前端前端前端前端端端前端端前端端端前端端端前端端  端前端端端前端端端前端端端前端端端前端端端前端端前端前端前端前端</p>
+   </div>
+   <div id="rightbottom">
+     <div id="picture1">
+        <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3806543374,2375285796&fm=11&gp=0.jpg" style="width:458px;height:275px;"/>
+        <div id="picbottom">
+         <div id="line4"></div>
+         <span id="font1">前端技术</span>
+         <span id="font2">前端技术前端技术</span>
+        </div>
+     </div>
+     <div id="picture2">
+      <div id="trangle1"></div><p id="wordline1">前端前端前端前端前端前端....................<span class="afterline">前端</span></p>
+      <div id="trangle2"></div><p id="wordline2">前端前端前端前端..........................<span class="afterline">前端前</span></p>
+      <div id="trangle3"></div><p id="wordline3">前端前端前端前端前端前端前端.................<span class="afterline">前端</span></p>
+      <div id="div1">
+       <span id="word1">0</span>
+       <div id="line5"></div>
+       <p id="word2">ONE TWO<br/>THREE FOUR FIVE</p>
+       <p id="word3">hello word hello word<br/>hello word</p>
+     </div>
+     <div id="word5-1">“</div><p id="word4">hello world hello<br/>world hello world hello<br/>world hello world hello<br/>world hello world hello<br/>world hello world hello<br/>hello world      </p><div id="word5-2">”</div>
+     </div>
+    </div>
+   <div id="line6"></div>
+   <div id="com">ife.baidu.com</div>
+   </div>
+ </body>
+</html>
